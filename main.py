@@ -5,6 +5,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
+app = FastAPI()
+
+@app.get("/forumData")
+
 def forumData():
     db = mysql.connector.connect(
         host="ocu-cs-mysql.mysql.database.azure.com",
